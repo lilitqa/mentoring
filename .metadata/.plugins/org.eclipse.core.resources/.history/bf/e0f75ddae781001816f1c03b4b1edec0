@@ -1,0 +1,29 @@
+package com.epam.mentoring.calculator;
+
+import org.testng.Assert;
+import org.testng.annotations.DataProvider;
+import org.testng.annotations.Test;
+
+import excel.ReadExcel;
+
+public class MultDouble extends BaseTest {
+
+	@DataProvider(name="values")
+	public Object[][] value() {
+	return new Object[][] {
+		{0,0,0},
+		{5.5, 2, 2.25},
+		{-2, 4, -8},
+		{10, 1000, 10000},
+		};
+	}
+		
+	@Test(dataProvider="values",groups = "demogroup")
+	public void multDouble(String a, String b,String c)
+	{
+		
+		double result = calc.mult(Double.valueOf(a),Double.valueOf(b));
+		Assert.assertEquals(result, Double.valueOf(c), 0.001);
+	}
+
+}

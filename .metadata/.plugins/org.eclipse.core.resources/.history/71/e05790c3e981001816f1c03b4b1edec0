@@ -1,0 +1,51 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+<suite name="Demo Suite">
+	
+	<test name="all">
+	<groups>
+		<run>			
+   			<include name="demogroup" />
+   			<exclude name ="skip"/>	
+   	  </run>	
+	</groups>
+		<classes>
+			<class name="com.epam.mentoring.calculator.BaseTest"/>
+			<class name="com.epam.mentoring.calculator.CosTest"/>
+			<class name="com.epam.mentoring.calculator.CtgTest"/>
+			<class name="com.epam.mentoring.calculator.IsNegativeTest"/>
+			<class name="com.epam.mentoring.calculator.IsPositiveTest"/>
+			<class name="com.epam.mentoring.calculator.MultDouble"/>
+			<class name="com.epam.mentoring.calculator.MultLong"/>
+			<class name="com.epam.mentoring.calculator.PowTest"/>
+			<class name="com.epam.mentoring.calculator.SinTest"/>
+			<class name="com.epam.mentoring.calculator.TestDiv"/>
+			<class name="com.epam.mentoring.calculator.TestDivLong"/>
+			<class name="com.epam.mentoring.calculator.TestSqrt"/>
+			<class name="com.epam.mentoring.calculator.TestSub"/>
+			<class name="com.epam.mentoring.calculator.TestSubLong"/>
+			<class name="com.epam.mentoring.calculator.TestSum"/>
+			<class name="com.epam.mentoring.calculator.TestSumLong"/>
+			<class name="com.epam.mentoring.calculator.TgTest"/>
+		</classes>
+		
+	</test>
+	<test name = "negative">
+	<parameter name="negativeLong"  value="-10"/>
+	<classes>
+	<class name="com.epam.mentoring.calculator.IsNegativeTest"/>
+	</classes>
+	</test>
+	
+	</test>
+	<test name = "positive">
+	<parameter name="positiveLong"  value="10"/>
+	<classes>
+	<class name="com.epam.mentoring.calculator.IsPositiveTest"/>
+	</classes>
+	</test>
+	
+</suite>
+	
+	
+
+	

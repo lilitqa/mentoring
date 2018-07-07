@@ -1,0 +1,35 @@
+package com.epam.mentoring.calculator.junit;
+
+import java.util.Arrays;
+import java.util.Collection;
+
+import org.junit.Assert;
+import org.junit.Test;
+import org.junit.runner.RunWith;
+import org.junit.runners.Parameterized;
+
+@RunWith(Parameterized.class)
+public class IsPositive extends BaseTest {
+	private long a;
+	
+	public IsPositive(long a) {
+		this.a=a;
+	}
+	@Test()
+	public void isNegative()
+	{
+		boolean result = calc.isPositive(a);
+		Assert.assertTrue(result);
+	}
+
+	
+	@Parameterized.Parameters
+	   public static Collection primeNumbers() {
+	      return Arrays.asList(new Object[][] {
+	         {10},
+	         {30},
+	         {90 },
+	         {-20},
+	      });
+	   }
+}

@@ -1,0 +1,20 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+<suite name="Demo Suite">
+	
+	<test name="test">
+	<groups>
+		<run>			
+   			<include name="demogroup" />
+   			<exclude name ="skip"/>	
+   	  </run>	
+	</groups>
+		<classes>
+			<class name="com.epam.mentoring.calculator.CosTest"/>
+		</classes>
+	</test>
+	
+</suite>
+	
+	
+
+	

@@ -1,0 +1,26 @@
+package com.epam.mentoring.calculator;
+
+import org.testng.Assert;
+import org.testng.annotations.DataProvider;
+import org.testng.annotations.Test;
+
+public class multDouble extends BaseTest {
+
+	@DataProvider(name="values")
+	public Object[][] value() {
+	return new Object[][] {
+		{0,0,0},
+		{0.2, 0.0001, 0.00002},
+		{100.5, 3.0, 301.5},
+		{24.85, 2.8, 69.58},
+		};
+	}
+		
+	@Test(dataProvider="values")
+	public void ctg(double a, double b,double c)
+	{
+		double result = calc.mult(a,b);
+		Assert.assertEquals(result, c, 0.001);
+	}
+
+}

@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="0" total="4" passed="4">
+  <reporter-output>
+  </reporter-output>
+  <suite name="Default suite" duration-ms="28" started-at="2018-07-07T13:58:13Z" finished-at="2018-07-07T13:58:13Z">
+    <groups>
+      <group name="demogroup">
+        <method signature="MultDouble.multDouble(double, double, double)[pri:0, instance:com.epam.mentoring.calculator.MultDouble@5bcab519]" name="multDouble" class="com.epam.mentoring.calculator.MultDouble"/>
+      </group> <!-- demogroup -->
+    </groups>
+    <test name="Default test" duration-ms="28" started-at="2018-07-07T13:58:13Z" finished-at="2018-07-07T13:58:13Z">
+      <class name="com.epam.mentoring.calculator.MultDouble">
+        <test-method status="PASS" signature="Setup()[pri:0, instance:com.epam.mentoring.calculator.MultDouble@5bcab519]" name="Setup" is-config="true" duration-ms="7" started-at="2018-07-07T17:58:13Z" finished-at="2018-07-07T17:58:13Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Setup -->
+        <test-method status="PASS" signature="multDouble(double, double, double)[pri:0, instance:com.epam.mentoring.calculator.MultDouble@5bcab519]" name="multDouble" duration-ms="5" started-at="2018-07-07T17:58:13Z" data-provider="values" finished-at="2018-07-07T17:58:13Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[0]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[0]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[0]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- multDouble -->
+        <test-method status="PASS" signature="multDouble(double, double, double)[pri:0, instance:com.epam.mentoring.calculator.MultDouble@5bcab519]" name="multDouble" duration-ms="2" started-at="2018-07-07T17:58:13Z" data-provider="values" finished-at="2018-07-07T17:58:13Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[5.5]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[2]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[11]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- multDouble -->
+        <test-method status="PASS" signature="multDouble(double, double, double)[pri:0, instance:com.epam.mentoring.calculator.MultDouble@5bcab519]" name="multDouble" duration-ms="3" started-at="2018-07-07T17:58:13Z" data-provider="values" finished-at="2018-07-07T17:58:13Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[-2]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[4]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[-8]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- multDouble -->
+        <test-method status="PASS" signature="multDouble(double, double, double)[pri:0, instance:com.epam.mentoring.calculator.MultDouble@5bcab519]" name="multDouble" duration-ms="1" started-at="2018-07-07T17:58:13Z" data-provider="values" finished-at="2018-07-07T17:58:13Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[0.1]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[0.001]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[1.0E-4]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- multDouble -->
+        <test-method status="PASS" signature="TearDown()[pri:0, instance:com.epam.mentoring.calculator.MultDouble@5bcab519]" name="TearDown" is-config="true" duration-ms="1" started-at="2018-07-07T17:58:13Z" finished-at="2018-07-07T17:58:13Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TearDown -->
+      </class> <!-- com.epam.mentoring.calculator.MultDouble -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
+</testng-results>

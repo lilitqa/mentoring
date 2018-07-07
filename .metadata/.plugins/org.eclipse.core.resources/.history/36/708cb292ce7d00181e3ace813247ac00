@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+<suite name="Demo Suite">
+<test name="Sub Cal Test">
+		<classes>
+			<class name="com.epam.mentoring.calculator.isNegativeTest"/>
+			<parameter name="isNegative"  value="-10"/>
+		</classes>
+	</test>
+</suite>

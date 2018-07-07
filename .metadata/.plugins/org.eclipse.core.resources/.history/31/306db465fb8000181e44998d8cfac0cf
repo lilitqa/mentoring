@@ -1,0 +1,28 @@
+package com.epam.mentoring.calculator;
+
+import org.testng.Assert;
+import org.testng.annotations.DataProvider;
+import org.testng.annotations.Test;
+
+public class CosTest extends BaseTest {
+	
+	@DataProvider(name="values")
+	public Object[][] value() {
+	return new Object[][] {
+		{0.0,1.0},
+		{1.0,0.9998},
+		{45.0,0.52532198881},
+		{90.0,0.0},	
+		};
+	}
+	
+		
+	@Test(dataProvider="values", groups = "demogroup")
+	public void cosTest(double a, double b)
+	{
+		System.out.println(a + b);
+//		double result = calc.cos(a);
+//		Assert.assertEquals(b, result, 0.0001);
+	}
+
+}

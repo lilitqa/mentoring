@@ -1,0 +1,29 @@
+package com.epam.mentoring.calculator;
+
+import org.testng.Assert;
+import org.testng.annotations.DataProvider;
+import org.testng.annotations.Test;
+
+public class testDiv extends BaseTest {
+	
+	@DataProvider(name="values")
+	public Object[][] value() {
+	return new Object[][] {
+		{0.0,0.0,0.0},
+		{1.0,1.0,1.0},
+		{3.24,1.5889,2.03914},
+		{0.0005,2,0.00025},
+		{1.5,2.8,0.535714},
+		};
+	}
+	
+	
+	@Test(dataProvider="values")
+	public void div(double a, double b, double c)
+	{
+		double result = calc.div(a, b);
+		Assert.assertEquals(c, result, 0.1);
+		
+	}
+
+}

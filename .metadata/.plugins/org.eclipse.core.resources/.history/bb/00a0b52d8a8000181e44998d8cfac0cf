@@ -1,0 +1,26 @@
+package com.epam.mentoring.calculator;
+
+import org.testng.Assert;
+import org.testng.annotations.DataProvider;
+import org.testng.annotations.Test;
+
+import excel.ReadExcel;
+
+public class multDouble extends BaseTest {
+
+	@DataProvider(name="values")
+	public Object[][] values() throws Exception{
+		 
+        Object[][] testObjArray = ReadExcel.getTableArray("C:\\Users\\Lilit_Vardanyan\\Desktop\\TestData.xlsx","Sheet1");
+        return (testObjArray);
+
+		}
+		
+	@Test(dataProvider="values")
+	public void ctg(double a, double b,double c)
+	{
+		double result = calc.mult(a,b);
+		Assert.assertEquals(result, c, 0.001);
+	}
+
+}

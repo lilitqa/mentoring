@@ -1,0 +1,8 @@
+-------------------------------------------------------------------------------
+Test set: TestSuite
+-------------------------------------------------------------------------------
+Tests run: 3, Failures: 1, Errors: 0, Skipped: 2, Time elapsed: 0.53 sec <<< FAILURE! - in TestSuite
+Setup(com.epam.mentoring.calculator.isNegativeTest)  Time elapsed: 0.402 sec  <<< FAILURE!
+java.lang.NoClassDefFoundError: com/epam/tat/module4/Calculator
+Caused by: java.lang.ClassNotFoundException: com.epam.tat.module4.Calculator
+

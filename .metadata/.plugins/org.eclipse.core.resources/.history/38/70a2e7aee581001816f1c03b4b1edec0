@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+<suite name="TestSuite">
+ <test name="NegativePositive">
+		<parameter name="negativeLong"  value="-10"/>
+		<parameter name="positiveLong"  value="10"/>
+		<classes>
+			<class name="com.epam.mentoring.calculator.IsNegativeTest"/>
+			<class name="com.epam.mentoring.calculator.IsPositiveTest"/>		
+		</classes>
+	</test>
+		<test name="tgCtg">
+		<parameter name="ctg1"  value="1,180,90"/>
+		<parameter name="ctgValue"  value="1,180,90"/>
+		<classes>
+			<class name="com.epam.mentoring.calculator.CtgTest"/>		
+		</classes>
+	</test> 
+	
+	<test name = "test1">
+	<groups>
+		<run>			
+   			<include name="demogroup" />
+   			<exclude name ="skip"/>	
+   	  </run>	
+	</groups>
+	<class name="com.epam.mentoring.calculator.CosTest"/>
+	<class name="com.epam.mentoring.calculator.CtgTest"/>
+	<class name="com.epam.mentoring.calculator.TgTest"/>
+	
+	</test>
+	</suite>
+	
+	

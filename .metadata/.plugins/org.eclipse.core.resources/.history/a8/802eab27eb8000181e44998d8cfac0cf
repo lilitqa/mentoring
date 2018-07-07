@@ -1,0 +1,23 @@
+package com.epam.mentoring.calculator.junit;
+
+import org.junit.*;
+
+import com.epam.tat.module4.Calculator;
+
+public class BaseTest {
+	
+protected Calculator calc;
+	
+	@BeforeClass
+	public  void Setup()
+	{
+		calc = new Calculator();	
+	}
+	
+	@AfterClass
+	public  void TearDown()
+	{
+		calc = null;	
+	}
+}
+

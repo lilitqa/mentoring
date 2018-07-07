@@ -1,0 +1,161 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [Demo Suite]">
+  <parameter name="negativeLong" value="-10"/>
+  <parameter name="positiveLong" value="10"/>
+  <parameter name="ctg" value="90"/>
+  <parameter name="ctgValue" value="0"/>
+  <test name="all">
+    <parameter name="ctg" value="90"/>
+    <parameter name="ctgValue" value="0"/>
+    <groups>
+      <run>
+        <include name="demogroup"/>
+        <exclude name="skip"/>
+      </run>
+    </groups>
+    <classes>
+      <class name="com.epam.mentoring.calculator.BaseTest"/>
+      <class name="com.epam.mentoring.calculator.CosTest"/>
+      <class name="com.epam.mentoring.calculator.CtgTest"/>
+      <class name="com.epam.mentoring.calculator.IsNegativeTest"/>
+      <class name="com.epam.mentoring.calculator.IsPositiveTest"/>
+      <class name="com.epam.mentoring.calculator.MultDouble"/>
+      <class name="com.epam.mentoring.calculator.MultLong"/>
+      <class name="com.epam.mentoring.calculator.PowTest"/>
+      <class name="com.epam.mentoring.calculator.SinTest"/>
+      <class name="com.epam.mentoring.calculator.TestDiv"/>
+      <class name="com.epam.mentoring.calculator.TestDivLong"/>
+      <class name="com.epam.mentoring.calculator.TestSqrt"/>
+      <class name="com.epam.mentoring.calculator.TestSub"/>
+      <class name="com.epam.mentoring.calculator.TestSubLong"/>
+      <class name="com.epam.mentoring.calculator.TestSum"/>
+      <class name="com.epam.mentoring.calculator.TestSumLong"/>
+      <class name="com.epam.mentoring.calculator.TgTest"/>
+    </classes>
+  </test> <!-- all -->
+  <test name="negative">
+    <parameter name="negativeLong" value="-10"/>
+    <classes>
+      <class name="com.epam.mentoring.calculator.IsNegativeTest"/>
+    </classes>
+  </test> <!-- negative -->
+  <test name="positive">
+    <parameter name="positiveLong" value="10"/>
+    <classes>
+      <class name="com.epam.mentoring.calculator.IsPositiveTest"/>
+    </classes>
+  </test> <!-- positive -->
+  <test name="all(failed)">
+    <parameter name="ctg" value="90"/>
+    <parameter name="ctgValue" value="0"/>
+    <groups>
+      <run>
+        <include name="demogroup"/>
+        <exclude name="skip"/>
+      </run>
+    </groups>
+    <classes>
+      <class name="com.epam.mentoring.calculator.SinTest">
+        <methods>
+          <include name="TearDown"/>
+          <include name="sinTest" invocation-numbers="1 2 3"/>
+          <include name="Setup"/>
+        </methods>
+      </class> <!-- com.epam.mentoring.calculator.SinTest -->
+      <class name="com.epam.mentoring.calculator.IsPositiveTest">
+        <methods>
+          <include name="TearDown"/>
+          <include name="TearDown"/>
+          <include name="Setup"/>
+          <include name="Setup"/>
+        </methods>
+      </class> <!-- com.epam.mentoring.calculator.IsPositiveTest -->
+      <class name="com.epam.mentoring.calculator.MultDouble">
+        <methods>
+          <include name="TearDown"/>
+          <include name="Setup"/>
+        </methods>
+      </class> <!-- com.epam.mentoring.calculator.MultDouble -->
+      <class name="com.epam.mentoring.calculator.TestSqrt">
+        <methods>
+          <include name="TearDown"/>
+          <include name="sqrtTest" invocation-numbers="3"/>
+          <include name="Setup"/>
+        </methods>
+      </class> <!-- com.epam.mentoring.calculator.TestSqrt -->
+      <class name="com.epam.mentoring.calculator.TestSubLong">
+        <methods>
+          <include name="TearDown"/>
+          <include name="Setup"/>
+        </methods>
+      </class> <!-- com.epam.mentoring.calculator.TestSubLong -->
+      <class name="com.epam.mentoring.calculator.PowTest">
+        <methods>
+          <include name="TearDown"/>
+          <include name="Setup"/>
+        </methods>
+      </class> <!-- com.epam.mentoring.calculator.PowTest -->
+      <class name="com.epam.mentoring.calculator.TestSub">
+        <methods>
+          <include name="TearDown"/>
+          <include name="Setup"/>
+        </methods>
+      </class> <!-- com.epam.mentoring.calculator.TestSub -->
+      <class name="com.epam.mentoring.calculator.TestSumLong">
+        <methods>
+          <include name="TearDown"/>
+          <include name="Setup"/>
+        </methods>
+      </class> <!-- com.epam.mentoring.calculator.TestSumLong -->
+      <class name="com.epam.mentoring.calculator.TestDivLong">
+        <methods>
+          <include name="TearDown"/>
+          <include name="divLongTest" invocation-numbers="0"/>
+          <include name="Setup"/>
+        </methods>
+      </class> <!-- com.epam.mentoring.calculator.TestDivLong -->
+      <class name="com.epam.mentoring.calculator.TestSum">
+        <methods>
+          <include name="TearDown"/>
+          <include name="Setup"/>
+        </methods>
+      </class> <!-- com.epam.mentoring.calculator.TestSum -->
+      <class name="com.epam.mentoring.calculator.MultLong">
+        <methods>
+          <include name="TearDown"/>
+          <include name="Setup"/>
+        </methods>
+      </class> <!-- com.epam.mentoring.calculator.MultLong -->
+      <class name="com.epam.mentoring.calculator.CtgTest">
+        <methods>
+          <include name="TearDown"/>
+          <include name="ctgTest" invocation-numbers="0"/>
+          <include name="Setup"/>
+        </methods>
+      </class> <!-- com.epam.mentoring.calculator.CtgTest -->
+      <class name="com.epam.mentoring.calculator.TestDiv">
+        <methods>
+          <include name="TearDown"/>
+          <include name="divTest" invocation-numbers="0"/>
+          <include name="Setup"/>
+        </methods>
+      </class> <!-- com.epam.mentoring.calculator.TestDiv -->
+      <class name="com.epam.mentoring.calculator.TgTest">
+        <methods>
+          <include name="tgTest" invocation-numbers="0"/>
+          <include name="TearDown"/>
+          <include name="Setup"/>
+        </methods>
+      </class> <!-- com.epam.mentoring.calculator.TgTest -->
+      <class name="com.epam.mentoring.calculator.IsNegativeTest">
+        <methods>
+          <include name="TearDown"/>
+          <include name="TearDown"/>
+          <include name="Setup"/>
+          <include name="Setup"/>
+        </methods>
+      </class> <!-- com.epam.mentoring.calculator.IsNegativeTest -->
+    </classes>
+  </test> <!-- all(failed) -->
+</suite> <!-- Failed suite [Demo Suite] -->

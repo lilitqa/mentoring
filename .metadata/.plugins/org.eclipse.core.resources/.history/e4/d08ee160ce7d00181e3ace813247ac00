@@ -1,0 +1,18 @@
+package com.epam.mentoring.calculator;
+
+import org.testng.Assert;
+import org.testng.annotations.Optional;
+import org.testng.annotations.Parameters;
+import org.testng.annotations.Test;
+
+public class isNegativeTest extends BaseTest {
+
+	 @Parameters({"isNegative"})
+	 @Test
+	 public void isNegative(@Optional("-15") long a)
+	 {
+		boolean result= calc.isNegative(a);
+		Assert.assertTrue(result);
+	 
+	 }
+}

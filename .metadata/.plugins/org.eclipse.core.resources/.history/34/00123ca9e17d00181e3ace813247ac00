@@ -1,0 +1,18 @@
+package com.epam.mentoring.calculator.junit;
+
+import org.testng.junit.*;
+
+import com.epam.mentoring.calculator.BaseTest;
+
+public class cosTest extends BaseTest {
+	
+	
+		
+	
+	public void cosTest(5.8,3.2)
+	{
+		double result = calc.cos(a);
+		Assert.assertEquals(b, result, 0.0001);
+	}
+
+}
